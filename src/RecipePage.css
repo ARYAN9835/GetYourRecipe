@@ -1,0 +1,54 @@
+.form-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	margin-top: 2px; 
+  }
+   
+  .search-form {
+	min-height: 10vh;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	background-color: rgb(6, 83, 14);
+  }
+  
+  .search-bar {
+	margin-right: 1rem;
+	width: 50%;
+	border: none;
+	padding: 10px;
+	border-radius: 40px;
+	box-shadow: 5px 10px #6aa70e;
+  }
+  
+  .search-button {
+	background: #0e290e;
+	border: 5px solid rgb(182, 211, 195);
+	border-radius: 8px;
+	padding: 10px 20px;
+	color: white;
+	font-size: larger;
+	margin: 0 0 0 10px;
+  }
+  
+  .search-button:hover {
+	background-color: #74a50a;
+  }
+  
+  .r-card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+  }
+
+  .Recipe-Page {
+	margin-top : 50px;
+	background-color: rgb(162, 202, 142);
+	padding-bottom: 80px;
+  }
+  

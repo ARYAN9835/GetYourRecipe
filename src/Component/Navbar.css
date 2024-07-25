@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding-right: 3rem 3rem 3rem 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height : 50px
+}
+
+h2 {
+  color: rgb(65, 193, 108);
+}
+
+.links {
+  display: flex;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 0.1rem;
+  margin-right: 2rem;
+}
+
+.links a:hover {
+  text-decoration: rgb(175, 106, 15);
+  color: rgb(102, 230, 102);
+}

@@ -1,0 +1,30 @@
+.recipe {
+	border-radius: 10px;
+	padding-left: 1rem;
+	box-shadow: 0px 5px 20px rgb(63, 60, 60);
+	margin: 50px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to right, 
+	  #2e2c1f 0%, #4a4e30 0%, #4c7121 0%, 
+	  #44541d 30%, #1c522d 64%, #3a4f57 100%);
+	width: 100%; 
+	max-width: 1500px;
+  }
+  
+  .image {
+	border-radius: 30px;
+	margin: 15px 15px 15px 15px;
+	width: 30%;
+	height: auto;
+	max-height: 300px;
+  }
+
+.recipe h1 {
+	font-size: 1.7rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+  

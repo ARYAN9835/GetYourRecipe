@@ -1,0 +1,83 @@
+.home-container {
+  background-color: #dbd2ba;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.home-header {
+  background-color: #f8b400;
+  color: #fff;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.featured-recipes {
+  margin-bottom: 20px;
+}
+
+.recipes-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.recipe-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 25%; /* Adjust width to make card smaller */
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.recipe-card img {
+  height: 200px; /* Increased height for larger images */
+  width: 100%;
+  object-fit: cover; /* Ensure image covers the area without distortion */
+  border-radius: 8px 8px 0 0;
+}
+
+.recipe-card h3 {
+  margin: 10px 0;
+}
+
+.cta-section {
+  margin-top: 20px;
+}
+
+.explore-button {
+  background-color: #f8b400;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.explore-button:hover {
+  background-color: #e5a100;
+}
+
+.points {
+  padding: 20px;
+  background-color: #bbac99;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.points ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  font-family: cursive; /* Cursive font for the list items */
+}
+
+.points li {
+  margin: 5px 0;
+}
