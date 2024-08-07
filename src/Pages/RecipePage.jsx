@@ -3,8 +3,8 @@ import Recipe from '../Component/Recipie.jsx';
 import "../RecipePage.css"
 
 const RecipePage = () => {
-  const APP_ID = '5c54b589';
-  const APP_KEY = '4b72d226a718615ee3b25e2ee3ca2c64';
+  const APP_ID = '';
+  const APP_KEY = '';
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("Mango");
