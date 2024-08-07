@@ -2,17 +2,17 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
-}
-
-.awareness-container {
+  }
+  
+  .awareness-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
     padding: 20px;
-}
-
-.message-card {
+  }
+  
+  .message-card {
     margin-top: 50px;
     background-color: #bfc3b1;
     border: 1px solid #ddd;
@@ -21,48 +21,101 @@ body {
     padding: 20px;
     max-width: 600px;
     text-align: center;
-}
-
-.message-card h1 {
+  }
+  
+  .message-card h1 {
     color: #333;
     margin-bottom: 15px;
-}
-
-.message-card h2.message-heading {
+  }
+  
+  .message-card h2.message-heading {
     color: #4e3a03;
     margin-bottom: 20px;
     font-size: 22px;
     font-weight: bold;
-}
-
-.message-card p {
+  }
+  
+  .message-card p {
     color: #666;
     margin: 10px 0;
-}
-
-.contact-link {
+  }
+  
+  .contact-link {
     color: #504d03;
     text-decoration: none;
-}
-
-.contact-link:hover {
+  }
+  
+  .contact-link:hover {
     text-decoration: underline;
-}
-
-@media (max-width: 600px) {
+  }
+  
+  .chart-container {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+  }
+  
+  .awareness-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .awareness-container form div {
+    margin: 10px 0;
+  }
+  
+  .awareness-container form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .awareness-container form textarea, form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .awareness-container form button {
+    padding: 10px 20px;
+    background-color: #4e3a03;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .awareness-container form  button:hover {
+    background-color: #3e2a02;
+  }
+  
+  @media (max-width: 600px) {
     .message-card {
-        padding: 15px;
+      padding: 15px;
     }
-
+  
     .message-card h1 {
-        font-size: 20px;
+      font-size: 20px;
     }
-
+  
     .message-card h2.message-heading {
-        font-size: 18px;
+      font-size: 18px;
     }
-
+  
     .message-card p {
-        font-size: 14px;
+      font-size: 14px;
     }
-}
+  
+    .chart-container {
+      height: 200px;
+    }
+  
+    form textarea, form input {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
