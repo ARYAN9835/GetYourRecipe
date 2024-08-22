@@ -1,10 +1,12 @@
+/* Home Page CSS */
+
+/* General Styles */
 .home-container {
   background-color: #dbd2ba;
   margin-top: 50px;
   padding: 20px;
   text-align: center;
 }
-
 
 .home-header {
   background-color: #f8b400;
@@ -80,4 +82,39 @@
 
 .points li {
   margin: 5px 0;
+}
+
+/* Responsive Styles */
+
+/* For Tablets and Smaller Screens */
+@media (max-width: 1024px) {
+  .recipe-card {
+    width: 30%; /* Adjust width for medium screens */
+  }
+}
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+  .recipe-card {
+    width: 45%; /* Adjust width for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-card {
+    width: 90%; /* Full width for very small screens */
+  }
+  
+  .home-header {
+    padding: 15px 0;
+  }
+  
+  .explore-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .points {
+    padding: 15px;
+  }
 }

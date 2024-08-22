@@ -1,121 +1,151 @@
+/* General Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.awareness-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  flex-direction: column; /* Add this to make it responsive */
+}
+
+.message-card {
+  margin-top: 50px;
+  background-color: #bfc3b1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  width: 100%; /* Add this to make it responsive */
+}
+
+.message-card h1 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 24px; /* Increase font size for better readability */
+}
+
+.message-card h2.message-heading {
+  color: #4e3a03;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.message-card p {
+  color: #666;
+  margin: 10px 0;
+  font-size: 16px; /* Increase font size for better readability */
+}
+
+.contact-link {
+  color: #504d03;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+}
+
+.awareness-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%; /* Add this to make it responsive */
+}
+
+.awareness-container form div {
+  margin: 10px 0;
+}
+
+.awareness-container form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.awareness-container form textarea,
+.awareness-container form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.awareness-container form button {
+  padding: 10px 20px;
+  background-color: #4e3a03;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.awareness-container form button:hover {
+  background-color: #3e2a02;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .awareness-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    padding: 20px;
+    padding: 15px;
   }
-  
   .message-card {
-    margin-top: 50px;
-    background-color: #bfc3b1;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 600px;
-    text-align: center;
+    padding: 15px;
   }
-  
   .message-card h1 {
-    color: #333;
-    margin-bottom: 15px;
+    font-size: 20px;
   }
-  
   .message-card h2.message-heading {
-    color: #4e3a03;
-    margin-bottom: 20px;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 18px;
   }
-  
   .message-card p {
-    color: #666;
-    margin: 10px 0;
+    font-size: 14px;
   }
-  
-  .contact-link {
-    color: #504d03;
-    text-decoration: none;
-  }
-  
-  .contact-link:hover {
-    text-decoration: underline;
-  }
-  
   .chart-container {
-    width: 100%;
-    height: 300px;
-    margin: 20px 0;
+    height: 200px;
   }
-  
-  .awareness-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
+  .awareness-container form textarea,
+  .awareness-container form input {
+    max-width: 300px;
   }
-  
-  .awareness-container form div {
-    margin: 10px 0;
-  }
-  
-  .awareness-container form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .awareness-container form textarea, form input {
-    width: 100%;
-    max-width: 400px;
+}
+
+@media (max-width: 480px) {
+  .awareness-container {
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
   }
-  
-  .awareness-container form button {
-    padding: 10px 20px;
-    background-color: #4e3a03;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  .message-card {
+    padding: 10px;
   }
-  
-  .awareness-container form  button:hover {
-    background-color: #3e2a02;
+  .message-card h1 {
+    font-size: 18px;
   }
-  
-  @media (max-width: 600px) {
-    .message-card {
-      padding: 15px;
-    }
-  
-    .message-card h1 {
-      font-size: 20px;
-    }
-  
-    .message-card h2.message-heading {
-      font-size: 18px;
-    }
-  
-    .message-card p {
-      font-size: 14px;
-    }
-  
-    .chart-container {
-      height: 200px;
-    }
-  
-    form textarea, form input {
-      width: 100%;
-      max-width: 300px;
-    }
+  .message-card h2.message-heading {
+    font-size: 16px;
   }
-  
+  .message-card p {
+    font-size: 12px;
+  }
+  .chart-container {
+    height: 150px;
+  }
+  .awareness-container form textarea,
+  .awareness-container form input {
+    max-width: 200px;
+  }
+}

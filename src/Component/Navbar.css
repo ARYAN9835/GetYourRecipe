@@ -2,17 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding-right: 3rem 3rem 3rem 3rem;
+  background-color: #2f3640; /* Darker background color */
+  padding: 0 3rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  height : 50px
+  height: 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
 h2 {
-  color: rgb(65, 193, 108);
+  color: #41bf53; /* Brighter green color */
+  font-weight: bold;
+  margin-right: 20px; /* Add some space between the logo and links */
 }
 
 .links {
@@ -20,13 +23,79 @@ h2 {
 }
 
 .links a {
-  color: white;
+  color: #fff; /* White text color */
   text-decoration: none;
-  margin-left: 0.1rem;
-  margin-right: 2rem;
+  margin-left: 20px; /* Increase spacing between links */
+  transition: color 0.3s ease; /* Add a smooth transition effect */
 }
 
 .links a:hover {
-  text-decoration: rgb(175, 106, 15);
-  color: rgb(102, 230, 102);
+  color: #66e64d; /* Brighter green hover color */
+}
+
+/* Hamburger Button */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1100; /* Make sure it's above the menu */
+  position: absolute;
+  right: 1rem; /* Adjust spacing from the right edge */
+  padding: 10px; /* Add some padding to the button */
+  border-radius: 50%; /* Make the button circular */
+  background-color: #2f3640; /* Match the navbar background color */
+}
+
+.navbar-toggle:hover {
+  background-color: #41bf53; /* Brighter green hover color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+  }
+
+  .navbar-toggle {
+    display: block;
+    top: 10px; /* Adjust top spacing if needed */
+  }
+
+  .links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(3, 37, 61, 0.8); /* Background color with transparency */
+    position: absolute;
+    top: 50px;
+    right: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px; /* Add some padding to the dropdown menu */
+    border-radius: 10px; /* Add a subtle border radius */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  }
+
+  .links.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .links a {
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%;
+    transition: color 0.3s ease;
+  }
+
+  .links a:hover {
+    color: #66e64d; /* Brighter green hover color */
+  }
 }
