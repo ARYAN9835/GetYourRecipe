@@ -3,8 +3,8 @@ import Recipe from '../Component/Recipie.jsx';
 import "../RecipePage.css"
 
 const RecipePage = () => {
-  const APP_ID = '';
-  const APP_KEY = '';
+  const VITE_APP_ID = import.meta.env.VITE_APP_ID;
+  const VITE_APP_KEY = import.meta.env.VITE_APP_KEY;
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("Mango");
@@ -16,7 +16,7 @@ const RecipePage = () => {
 
   const getRecipes = async () => {
     setError("");
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${VITE_APP_ID}&app_key=${VITE_APP_KEY}`);
     const data = await response.json();
     if(data.hits.length == 0) {
       setError("No recipes found. Please enter valid variety of item");
