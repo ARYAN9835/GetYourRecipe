@@ -1,0 +1,106 @@
+/* quiz1.css */
+.quiz {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scoreSection {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0ffe0;
+    border-radius: 8px;
+    border: 2px solid #4caf50;
+}
+
+.scoreSection p {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.scoreSection ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scoreSection li {
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.scoreSection li span {
+    font-weight: bold;
+    color: #ff3333;
+}
+
+.scoreSection li:hover {
+    background-color: #e0e0e0;
+}
+
+.scoreSection li[style*="color: green"] {
+    background-color: #e0ffe0;
+    color: #4caf50;
+}
+
+.scoreSection li[style*="color: red"] {
+    background-color: #ffe0e0;
+    color: #f44336;
+}
+
+/* Question styles */
+.quizSection .question-count {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.quizSection .question-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.quizSection .question-options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quizSection .question-options button:hover {
+    background-color: #132e1c;
+}
+
+.quizSection .question-options button[style*="background-color: lightgray"] {
+    background-color: #e0e0e0;
+}
+
+.check-score button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.check-score button:hover {
+    background-color: #45a049;
+}

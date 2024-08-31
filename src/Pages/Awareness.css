@@ -1,151 +1,96 @@
-/* General Styles */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-}
+/* Awareness.css */
 
+/* General Container Style */
 .awareness-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
+  font-family: Arial, sans-serif;
   padding: 20px;
-  flex-direction: column; /* Add this to make it responsive */
+  max-width: 1200px;
+  margin-top: 30px;
 }
 
-.message-card {
-  margin-top: 50px;
-  background-color: #bfc3b1;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 600px;
+/* Header Style */
+header {
   text-align: center;
-  width: 100%; /* Add this to make it responsive */
+  margin-bottom: 40px;
 }
 
-.message-card h1 {
+header h1 {
+  font-size: 2.5em;
   color: #333;
-  margin-bottom: 15px;
-  font-size: 24px; /* Increase font size for better readability */
 }
 
-.message-card h2.message-heading {
-  color: #4e3a03;
-  margin-bottom: 20px;
-  font-size: 22px;
-  font-weight: bold;
+header p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
 }
 
-.message-card p {
-  color: #666;
-  margin: 10px 0;
-  font-size: 16px; /* Increase font size for better readability */
+/* Section Style */
+section {
+  margin: 20px;
 }
 
-.contact-link {
-  color: #504d03;
-  text-decoration: none;
-}
-
-.contact-link:hover {
-  text-decoration: underline;
-}
-
-.chart-container {
-  width: 100%;
-  height: 300px;
-  margin: 20px 0;
-}
-
-.awareness-container form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0;
-  width: 100%; /* Add this to make it responsive */
-}
-
-.awareness-container form div {
-  margin: 10px 0;
-}
-
-.awareness-container form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.awareness-container form textarea,
-.awareness-container form input {
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
+.topic-section {
+  margin-bottom: 40px;
+  padding: 20px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
-.awareness-container form button {
-  padding: 10px 20px;
-  background-color: #4e3a03;
-  color: white;
+.topic-section h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.topic-section p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Button Style */
+button {
+  background-color: #4CAF50; /* Green */
   border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 10px 0;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.awareness-container form button:hover {
-  background-color: #3e2a02;
+button:hover {
+  background-color: #45a049; /* Darker Green */
 }
 
-/* Responsive Styles */
+button:focus {
+  outline: none;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
+  .topic-section {
+    padding: 15px;
+  }
   .awareness-container {
-    padding: 15px;
+    margin-top: 50px;
   }
-  .message-card {
-    padding: 15px;
+  header h1 {
+    font-size: 2em;
   }
-  .message-card h1 {
-    font-size: 20px;
-  }
-  .message-card h2.message-heading {
-    font-size: 18px;
-  }
-  .message-card p {
-    font-size: 14px;
-  }
-  .chart-container {
-    height: 200px;
-  }
-  .awareness-container form textarea,
-  .awareness-container form input {
-    max-width: 300px;
-  }
-}
 
-@media (max-width: 480px) {
-  .awareness-container {
-    padding: 10px;
+  header p {
+    font-size: 1em;
   }
-  .message-card {
-    padding: 10px;
-  }
-  .message-card h1 {
-    font-size: 18px;
-  }
-  .message-card h2.message-heading {
-    font-size: 16px;
-  }
-  .message-card p {
-    font-size: 12px;
-  }
-  .chart-container {
-    height: 150px;
-  }
-  .awareness-container form textarea,
-  .awareness-container form input {
-    max-width: 200px;
+
+  button {
+    width: 100%;
+    padding: 12px 0;
   }
 }
