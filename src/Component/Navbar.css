@@ -63,7 +63,9 @@ h2 {
 
   .navbar-toggle {
     display: block;
-    top: 10px; /* Adjust top spacing if needed */
+    top: 20px; /* Adjust top spacing if needed */
+    max-width: 20%;
+    padding-bottom: 0.3rem;
   }
 
   .links {
